@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张文洋 | Academic Homepage</title>
+  <meta name="description" content="张文洋个人学术主页，展示教育背景、研究兴趣、项目经历、竞赛成果与联系方式。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="avatar">ZWY</div>
+        <h1>张文洋</h1>
+        <p class="role">江苏大学 软件工程本科</p>
+        <p class="intro">
+          研究兴趣包括知识图谱、大语言模型应用、RAG、软件安全与智能合约漏洞检测。
+        </p>
+        <a class="button" href="resume.pdf" download>Download CV</a>
+        <ul class="contact-list">
+          <li>电话：18861987512</li>
+          <li>邮箱：<a href="mailto:18861987512@163.com">18861987512@163.com</a></li>
+          <li>地点：江苏盐城</li>
+          <li>GitHub：<a href="https://github.com/Wenyang-Zhang666" target="_blank" rel="noreferrer">Wenyang-Zhang666</a></li>
+        </ul>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+          我目前就读于江苏大学软件工程专业，专业排名 1/120，GPA 为 4.15/5。围绕人工智能应用与软件安全方向，
+          我长期参与知识图谱、RAG、大模型微调、模糊测试与智能合约漏洞检测相关项目。
+        </p>
+        <p>
+          本科期间累计获得 9 项国家级、15 项省级和 20 项校级竞赛奖项，授权国家发明专利 1 项，
+          获得软件著作权 3 项，主持结题 1 项国家级大创，并有 1 篇 CCF-C 会议论文在投。
+        </p>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="item">
+          <div class="item-header">
+            <h3>江苏大学，软件工程，本科</h3>
+            <span>2022.09 - 至今</span>
+          </div>
+          <p>
+            专业排名 1/120，CET-4 537，CET-6 439。曾任校学生会权益部负责人。
+          </p>
+          <p>
+            核心课程：概率论统计（99）、数据库系统概论（98）、软件开发技术（95）、移动应用开发（95）。
+          </p>
+          <p>
+            荣誉称号：校一等奖学金、校三好学生、校优秀共青团员、校优秀学生干部。
+          </p>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <h2>Research Interests</h2>
+        <ul class="bullet-list">
+          <li>知识图谱与知识增强问答：KBQA、Neo4j、关系建模与检索增强生成。</li>
+          <li>大语言模型应用：Prompt Engineering、LoRA 微调、RAG 与 GraphRAG。</li>
+          <li>软件安全：Fuzzing、智能合约漏洞检测、状态感知测试序列生成。</li>
+          <li>人工智能竞赛应用：医疗健康、古代物理数字展示、AIGC 创意设计。</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Selected Projects</h2>
+
+        <div class="item">
+          <div class="item-header">
+            <h3>BQAI+：基于知识图谱联合医案增强大模型检索的中医问诊平台</h3>
+            <span>负责人 · 2023.06 - 2024.12</span>
+          </div>
+          <p>
+            面向中医专家知识匮乏和语言模型幻觉问题，构建中医知识图谱并结合 RAG 技术完成动态问诊推理。
+            我负责 Neo4j 图谱构建、Prompt 优化、LangChain RAG 链路实现与 Django 后端搭建。
+          </p>
+          <p class="meta">
+            成果：中国大学生计算机设计大赛国家二等奖，4C 人工智能创意赛华东区第一，国家授权发明专利第一发明人。
+          </p>
+          <p>
+            <a href="https://aistudio.baidu.com/projectdetail/8378916?searchKeyword=bqai&searchTab=PROJECT" target="_blank" rel="noreferrer">Project Demo</a>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <h3>基于函数嵌入相似性的智能合约漏洞检测方法研究</h3>
+            <span>国家级大创主持 · 2024.06 - 2025.08</span>
+          </div>
+          <p>
+            针对现有模糊测试工具难以捕捉特定交易序列触发漏洞的问题，提出状态感知签名生成与历史交易引导策略，
+            以提升漏洞检测覆盖率与准确率。
+          </p>
+          <p class="meta">
+            成果：论文《fFuzz: A State-aware Function-level Fuzzing Framework for Smart Contract Vulnerabilities Detection》在 ICICS 2025（CCF-C）三作在投。
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <h3>基于进化策略的模糊测试突变调度工具设计与实现</h3>
+            <span>负责人 · 2024.12 - 2025.03</span>
+          </div>
+          <p>
+            将进化策略引入 AFL 的 havoc 阶段，近似学习突变算子的理想概率分布，减少次优算子的无效迭代。
+            我负责算法实现与基于 FuzzBench 的实验验证。
+          </p>
+          <p class="meta">
+            成果：全球校园人工智能算法大赛国家二等奖，申请软著 1 项。
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <h3>凝古观理：基于 Unity3D 的中国古代物理时空博物馆</h3>
+            <span>核心成员 · 2025.02 - 2025.03</span>
+          </div>
+          <p>
+            基于 Unity 平台和 3D 建模技术构建沉浸式古代物理博物馆，支持虚拟漫游和实时讲解。
+            我主要负责 3D Max 场景建模、镜头移动与用户视角切换脚本开发。
+          </p>
+          <p class="meta">
+            成果：全国大学生数字媒体科技作品及创意大赛国家三等奖。
+          </p>
+        </div>
+      </section>
+
+      <section id="awards" class="section">
+        <h2>Selected Honors and Awards</h2>
+        <ul class="timeline">
+          <li><span>2024.11</span> 中国高校计算机大赛人工智能创意赛 国家二等奖</li>
+          <li><span>2024.09</span> RAICOM 睿抗大模型应用开发赛 国家二等奖</li>
+          <li><span>2024.07</span> 中国大学生计算机设计大赛 国家二等奖</li>
+          <li><span>2024.06</span> 全球校园人工智能算法竞赛 国家二等奖</li>
+          <li><span>2024.10</span> 全国大学生数字媒体科技作品及创意大赛 国家三等奖</li>
+          <li><span>2024.04</span> 睡眠疾病知识图谱专项赛 国家三等奖</li>
+          <li><span>2023.04</span> 互联网+ 江苏赛区 省银奖</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="two-col">
+          <div>
+            <h3>Programming</h3>
+            <p>Python, C++, Java, C#, SQL</p>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <p>Django, Spring Boot, LangChain, Neo4j, Unity3D</p>
+          </div>
+          <div>
+            <h3>Research Topics</h3>
+            <p>Knowledge Graph, KBQA, RAG, GraphRAG, Prompt Engineering, LoRA</p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <p>Git, FuzzBench, ALBERT, Android/Web Deployment</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
